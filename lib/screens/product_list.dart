@@ -96,6 +96,7 @@ class _product_list_uiState extends State<product_list_ui> {
                                               setState(() {
                                                 controller.list[index].isAdded = false;
                                               });
+                                              Get.snackbar("Remove from Cart", "");
                                             }
                                             controller.list[index].cart_count = controller.list[index].cart_count==null?
                                             1:controller.list[index].cart_count!-1;
@@ -113,6 +114,8 @@ class _product_list_uiState extends State<product_list_ui> {
                                   1:controller.list[index].cart_count!+1;
                             });
                             controller.addToCart(controller.list[index],controller.list[index].cart_count!);
+                            Get.snackbar("Added in Cart","");
+
 
                           }, child:
 

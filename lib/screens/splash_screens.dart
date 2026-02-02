@@ -19,7 +19,9 @@ class _splash_screensState extends State<splash_screens> {
   }
 
   redirect(){
+
     Navigator.push(context, MaterialPageRoute(builder: (_)=>product_list_ui()));
+
   }
 
 
